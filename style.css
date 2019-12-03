@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    color:#5c5c5c;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin:0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+/*Header*/
+
+.header-content{
+    width:100%;
+    height: 500px;
+    background-image: url("image/main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 10px 12vh 50px 0 rgba(0, 0, 0, 0.5);
+    margin-bottom: 45px;
+}
+header span {
+    filter: brightness(0) invert(1);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+header span img.instagram-icon {
+    vertical-align: middle;
+    width: 20px;
+}
+
+.header-nav {
+    text-align: center;
+    filter: drop-shadow(0px 0 40px #222);
+}
+
+.header-nav-menu {
+    margin: auto;
+    padding:0;
+    list-style-type: none;
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 10px -6px #222;
+    filter: drop-shadow(0px 0 40px #222);
+} 
+
+.header-nav-menu li {
+    display: inline-block;
+    padding:0 25px;
+    height:100%;
+    margin-bottom: 45px;
+}
+
+.header-nav-menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #2e2e2e;
+}
+
+/* Header End */
+
+/* Main */
+/* hotdog__info */
+
+
+.hotdog__info {
+    background-color: #FAFAFA;
+    text-align: center;
+}
+
+.hotdog__content img {
+    padding-top:115px;
+    padding-bottom: 36px;
+}
+
+.hotdog__content h1 {
+    font-size: 56px;
+    color: #555559;
+    font-weight: 300;
+    letter-spacing: -2.24px;
+
+    padding-bottom: 80px;
+}
+
+.hotdog__content button {
+    width: 310px;
+    height: 65px;
+    border-radius: 6px;
+    background-color: #286782;
+    cursor: pointer;
+    
+    margin-bottom: 173px;
+
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.8px;
+}
+
+@media screen and (max-width: 980px) {
+    .hotdog__content h1 {
+        font-size: 44px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* HotDog Description */
+
+.hotdog__description {
+  
+    background-color: #FFF;
+    margin: -7px auto -8px auto;
+    max-width: 100%;
+    line-height: 1.65;
+    display: flex;
+}
+
+.hotdog__description p {
+    font-size: 18px;
+    padding: 0px 147px 0 137px;
+    color: #555559;
+    font-weight: 300;
+    line-height: 23.97px;
+    letter-spacing: -0.72px;
+    }
+
+.hotdog__description h2 {
+    color: #555559;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.96px;
+    padding: 0 0 0 92px;
+}
+
+.hotdog__description h2::before {
+    display: inline-block;
+    content: "";
+    background: #84959c;
+    width: 31px;
+    height: 2px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.hotdog__description img{
+    width: 100%;
+}
+
+.hotdog__description h2 span {
+    
+    padding-right: 20px;
+}
+
+.description__left {
+    flex: 1;
+    margin: auto;
+    justify-content: center;
+}
+
+.description__img-right {
+    flex: 1;
+}
+
+.description__right {
+    flex: 1;
+    order: 2;
+    margin: auto;
+    justify-content: center;
+}
+
+.description__img-left {
+    flex: 1;
+    order: 1;
+}
+
+@media (max-width: 850px) {
+    .hotdog__description {
+        display: block;
+    }
+}
+
+
+
+/* Footer */
+footer{
+    background-color: #efefef;
+    padding:10px 31px;
+}
+
+footer p,
+footer ul{
+    display: inline-block;
+    font-size: 14px;
+}
+
+.footer-contacts {
+    float: right;
+}
+
+.footer-contacts li {
+    display: inline-block;
+}
+
+.footer-contacts li:after {
+    content: " | ";
+    margin:0 10px;
+}
+
+.footer-contacts li:last-child::after {
+    display: none;
+}
+.footer-contacts li:last-child:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+    footer p,
+    footer ul {
+        display: block;
+        text-align: center;
+    }
+    .footer-contacts {
+        float: none;
+    }
+    .footer-contacts li{
+        display: block;
+    }
+    .footer-contacts li:after{
+        display: block;
+    }
+}
